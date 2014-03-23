@@ -32,7 +32,7 @@ class Membership_model extends CI_Model {
 		$email = $user_data['email_address'];
 		$en_email = urlencode($email);
 		$confirmation_id = $user_data['confirmation_id'];
-		$confirmation_link = base_url() . "login/confirmation/$en_email/$confirmation_id";
+		$confirmation_link = base_url() . "index.php/login/confirmation/$en_email/$confirmation_id";
 		$message = "Hi!
 
 Thank you for joining BarSkin. This is just an email to let you know that the signup process has gone smoothly, and that you now have an account with us!
